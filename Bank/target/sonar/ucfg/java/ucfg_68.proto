@@ -1,0 +1,20 @@
+
+Acom.revature.util.UserInputValidation#determineFloatPrecision(F)Z
+__unknown_file (cash"1*æ
+1Ç
+xC:\Users\apbum\Documents\Revature\week_one\batch_source\batch-source\Bank\src\com\revature\util\UserInputValidation.javaZ Z(Ó
+Ç
+xC:\Users\apbum\Documents\Revature\week_one\batch_source\batch-source\Bank\src\com\revature\util\UserInputValidation.javaZ Z(2%0Ljava.util.regex.Pattern#compile(Ljava/lang/String;)Ljava/util/regex/Pattern;"
+^\\d+\\.\\d{0,2}$ 
+Ç
+xC:\Users\apbum\Documents\Revature\week_one\batch_source\batch-source\Bank\src\com\revature\util\UserInputValidation.java[ [(2%1-java.lang.String#valueOf(F)Ljava/lang/String;"
+"""
+
+cashÂ
+Ç
+xC:\Users\apbum\Documents\Revature\week_one\batch_source\batch-source\Bank\src\com\revature\util\UserInputValidation.java[ [(3%2Rjava.util.regex.Pattern#matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;"
+
+%1"ç
+Ç
+xC:\Users\apbum\Documents\Revature\week_one\batch_source\batch-source\Bank\src\com\revature\util\UserInputValidation.java\ \(
+""

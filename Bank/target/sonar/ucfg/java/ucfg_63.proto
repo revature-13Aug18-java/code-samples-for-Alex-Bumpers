@@ -1,0 +1,21 @@
+
+Jcom.revature.util.UserInputValidation#userNameIsValid(Ljava/lang/String;)Z
+__unknown_file (username"1*à
+1Ç
+xC:\Users\apbum\Documents\Revature\week_one\batch_source\batch-source\Bank\src\com\revature\util\UserInputValidation.java (+ö
+Ç
+xC:\Users\apbum\Documents\Revature\week_one\batch_source\batch-source\Bank\src\com\revature\util\UserInputValidation.java (,regex__id"
+
+""‚
+Ç
+xC:\Users\apbum\Documents\Revature\week_one\batch_source\batch-source\Bank\src\com\revature\util\UserInputValidation.java (0%0Ljava.util.regex.Pattern#compile(Ljava/lang/String;)Ljava/util/regex/Pattern;"	
+
+regexÎ
+Ç
+xC:\Users\apbum\Documents\Revature\week_one\batch_source\batch-source\Bank\src\com\revature\util\UserInputValidation.java   (3%1Rjava.util.regex.Pattern#matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;"
+
+
+username"ç
+Ç
+xC:\Users\apbum\Documents\Revature\week_one\batch_source\batch-source\Bank\src\com\revature\util\UserInputValidation.java" "(
+""
