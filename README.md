@@ -22,6 +22,7 @@ For the **client-side/front-end** of the application, I styled most pages of the
 Although I was less involved with **server-side** technologies for this project than with DevOps and front-end, I did assist building and customizing certain functionality for the Spring controllers.
 
 Java/Back end: https://github.com/alexbumpers/project2-java-ANM
+
 Angular/Front-end: https://github.com/alexbumpers/project2-angular-ANM
 
 ### Project 3 - Revature Rideforce: Ridesharing Application
