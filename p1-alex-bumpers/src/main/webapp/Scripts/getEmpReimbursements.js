@@ -1,30 +1,31 @@
 let sessionId;
 const isUserUrl = "http://localhost:8080/p1-alex-bumpers/session";
+
 function validateUser(xhr) {
   let response = JSON.parse(xhr.responseText);
-  if(response == null || response.username == null) {
-    window.location="http://localhost:8080/p1-alex-bumpers/login";
+  if (response == null || response.username == null) {
+    window.location = "http://localhost:8080/p1-alex-bumpers/login";
   }
 
   let username = document.getElementById("username");
   username.innerHTML = response.username;
   console.log(response);
-  
+
   sessionId = response.id;
   console.log('id', sessionId);
-  
-  let initUrl =`${reimbursementUrl}?employeeId=${sessionId}`;
+
+  let initUrl = `${reimbursementUrl}?employeeId=${sessionId}`;
   sendAjaxGet(initUrl, populateTable);
 }
 
 function populateTable(xhr) {
   let tbody = document.getElementById("tbody");
-//
+  //
   console.log(xhr);
   let response = JSON.parse(xhr.responseText);
   let reimbursements = response.reimbursements;
 
-  for(let reimbursement of reimbursements) {
+  for (let reimbursement of reimbursements) {
     let trEl = document.createElement("tr");
 
     trEl.innerHTML = `
@@ -101,14 +102,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Populate pending tab already
-  
+
 
   function showAlert(xhr) {
     let submitAlert = document.getElementById("submitAlert");
     submitAlert.classList.remove("noDisplay");
     submitAlert.classList.add("doDisplay");
     // hide after 2secs
-    setTimeout(function() {
+    setTimeout(function () {
       submitAlert.classList.remove("doDisplay");
       submitAlert.classList.add("noDisplay");
     }, 3000);
@@ -128,25 +129,25 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listeners for pending/resolved reimbursements
   let navTabs = document.getElementsByClassName("rNav");
   // pending populate table
-  navTabs[0].addEventListener("click", function() {
+  navTabs[0].addEventListener("click", function () {
     tbody.innerHTML = "";
     navTabs[0].classList.add("activeTab");
     navTabs[1].classList.remove("activeTab");
     tbody.innerHTML = "";
-    let url =`${reimbursementUrl}?employeeId=${sessionId}&currentState=pending`;
+    let url = `${reimbursementUrl}?employeeId=${sessionId}&currentState=pending`;
     sendAjaxGet(url, populateTable);
   });
 
-  navTabs[1].addEventListener("click", function() {
+  navTabs[1].addEventListener("click", function () {
     tbody.innerHTML = "";
     navTabs[1].classList.add("activeTab");
     navTabs[0].classList.remove("activeTab");
-    let url =`${reimbursementUrl}?employeeId=${sessionId}&currentState=resolved
+    let url = `${reimbursementUrl}?employeeId=${sessionId}&currentState=resolved
     `;
     sendAjaxGet(url, populateTable);
   });
 
-  
+
 
 
 });

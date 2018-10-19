@@ -19,19 +19,12 @@ CREATE TABLE REIMBURSEMENTS (
     EMP_ID NUMBER(10)
 );
 
-
-
 INSERT INTO EMPLOYEES VALUES (1, 'Alex Bumpers', 1, 'Software Engineer', 'alex', 'pass123', 0); 
 INSERT INTO EMPLOYEES VALUES (2, 'John Doe', null, 'Senior Developer', 'john', 'pass456', 1);
 INSERT INTO EMPLOYEES VALUES (3, 'Harry Potter', 2, 'CEO', 'harry', 'pass789', 1);
-INSERT INTO EMPLOYEES VALUES(4, 'George Washington', null, 'some dude', 'george', 'pass1', 0);
-
-UPDATE EMPLOYEES SET EMP_NAME = 'George Washington' WHERE EMP_ID = '4';
-
 
 select * from employees;
 select * from reimbursements;
-
 
 COMMIT;
 INSERT INTO REIMBURSEMENTS VALUES (1, 2000, 'PENDING', 1, 2);
@@ -55,12 +48,9 @@ END;
 
 COMMIT;
 
-
-
 CREATE SEQUENCE SQ_EMPLOYEES_PK
 START WITH 2
 INCREMENT BY 1;
-
 
 CREATE OR REPLACE TRIGGER TR_INSERT_EMPLOYEES
 BEFORE INSERT ON EMPLOYEES

@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const userSessionUrl = "http://localhost:8080/p1-alex-bumpers/session";
 
 
     function sendAjaxGet(url, callback) {
         let xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
+        xhr.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
                 callback(this);
             }
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let username = document.getElementById("username");
             username.innerHTML = response.username;
             // ajax get reqs
-//             sendAjaxGet(reimbursementsUrl, populateERBs);
+            //             sendAjaxGet(reimbursementsUrl, populateERBs);
             // sendAjaxGet(reimbursementsUrl + "?reimbursementStatus=pending", populateERBs);
             // sendAjaxGet(reimbursementsUrl + "?reimbursementStatus=resolved", populateERBs);
         }
