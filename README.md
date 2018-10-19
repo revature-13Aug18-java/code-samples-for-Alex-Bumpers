@@ -31,7 +31,7 @@ Rideforce is a ride sharing application that allows users to find rides to work 
 I was one of three team leads for this project, and in my role, I managed the **DevOps** team.
 
 My duties for the Rideforce project included:
-- Managing a DevOps team and delegating tasks to these team members.
+- Managing a DevOps team and delegating tasks to these team members in an agile environment.
 - Implementing, creating, and managing a collection of Docker containers which allowed us to separate and isolate all of our various microservices.
 - Implementing a Jenkins pipeline for the continuous deployment of our microservices.
 - Managing RDS, EC2, and S3 instances using Amazon Web Services.

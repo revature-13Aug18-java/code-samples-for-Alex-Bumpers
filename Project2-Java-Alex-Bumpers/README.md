@@ -1,6 +1,8 @@
 # Project 2 - Music Based Social Network (MBSN): Full-Stack Spring with Angular and a CI/CD Pipeline
 
-Angular/Front-end: https://github.com/alexbumpers/project2-angular-ANM
+Java/Back end: https://github.com/alexbumpers/project2-java-ANM
+
+This directory includes the Java/Spring files and features that I worked on for project 2.
 
 MBSN is a social network that uses the Spotify Web API to connect users based on common interests in music. Users can create an account, log in, log out, edit their profiles, search for songs and add them to their profile, view their profile page, view a timeline of other users' activity, and see common musical interests.
 
