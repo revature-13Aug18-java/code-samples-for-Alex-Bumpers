@@ -14,3 +14,9 @@ My duties for the Rideforce project included:
 - Generating documentation using Javadocs and Compodoc, and automated the hosting of this documentation via Amazon S3.
 
 Technologies I've used for this project included: **Jenkins**, **Amazon Web Services**, **EC2**, **S3**, **RDS**, **Trello**, **Git**, **Github**, **Jacoco**, **Docker**, **Docker**, **SonarCloud/SonarQube**.
+
+---
+
+## Project 3 DevOps Pipeline Workflow
+
+After EC2, S3, RDS, and any other Amazon Web Services instance is created, the continuous integration and deployment pipeline is as follows:

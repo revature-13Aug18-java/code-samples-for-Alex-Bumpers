@@ -20,10 +20,6 @@ public class SessionManager {
 		session.setAttribute("id", employee.getId());
 		session.setAttribute("name", employee.getName());
 		session.setAttribute("position", employee.getPosition());
-		
-		// test
-
-		
 	}
 
 	// validates that user does indeed exist and has a valid account with associated
