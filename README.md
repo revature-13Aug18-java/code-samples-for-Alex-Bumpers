@@ -9,10 +9,6 @@ MBSN is a social network that uses the Spotify Web API to connect users based on
 
 My primary roles in this project involved working extensively with both our client-side application and DevOps, implementing principles such as continuous deployment.
 
-Java/Back end: https://github.com/alexbumpers/project2-java-ANM
-
-Angular/Front-end: https://github.com/alexbumpers/project2-angular-ANM
-
 ### Project 3 - Revature Rideforce: Ridesharing Application
 Rideforce is a ride sharing application that allows users to find rides to work using the Google Maps API. It is built using Spring and Angular, and uses a microservice-based architecture.
 
