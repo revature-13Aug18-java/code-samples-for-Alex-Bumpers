@@ -32,13 +32,10 @@ public class ReimbursementServlet extends HttpServlet {
 
 		SessionManager sm = new SessionManager();
 
-		// not sure if this var is right
 		String reimbursementStatus = request.getParameter("reimbursementStatus");
 		String employeeId = request.getParameter("employeeId");
 		String reimbursementId = request.getParameter("reimbursementId");
 		String action = request.getParameter("action");
-
-		/// string something...
 
 		ObjectMapper om = new ObjectMapper();
 		PrintWriter pw = response.getWriter();

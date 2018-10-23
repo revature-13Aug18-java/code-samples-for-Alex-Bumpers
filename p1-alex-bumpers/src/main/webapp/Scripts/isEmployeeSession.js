@@ -24,10 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             let username = document.getElementById("username");
             username.innerHTML = response.username;
-            // ajax get reqs
-            //             sendAjaxGet(reimbursementsUrl, populateERBs);
-            // sendAjaxGet(reimbursementsUrl + "?reimbursementStatus=pending", populateERBs);
-            // sendAjaxGet(reimbursementsUrl + "?reimbursementStatus=resolved", populateERBs);
         }
     }
 

@@ -35,14 +35,11 @@ public class GetAllEmployeesServlet extends HttpServlet {
 
 		SessionManager sm = new SessionManager();
 
-		// not sure if this var is right
 		String name = request.getParameter("name");
 		String employeeId = request.getParameter("id");
 		String position = request.getParameter("position");
 		String username = request.getParameter("username");
 		String action = request.getParameter("action");
-
-		/// string something...
 
 		ObjectMapper om = new ObjectMapper();
 		PrintWriter pw = response.getWriter();
@@ -68,8 +65,6 @@ public class GetAllEmployeesServlet extends HttpServlet {
 		
 
 		boolean userExistsInSession = sm.validateUserExistence(request);
-//		ReimbursementManager rm = new ReimbursementManager();
-//		reimbursements = rm.connectEmployeeERB(reimbursements);
 
 		if (userExistsInSession) {
 			String employeesString = om.writeValueAsString(employees);
