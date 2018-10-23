@@ -23,7 +23,7 @@ public class SessionManager {
 	}
 
 	// validates that user does indeed exist and has a valid account with associated
-	// data
+	// data, then sets the user session to true
 	public boolean validateUserExistence(HttpServletRequest request) {
 		boolean userExists = false;
 		HttpSession session = request.getSession(false);
