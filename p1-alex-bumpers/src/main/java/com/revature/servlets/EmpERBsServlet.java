@@ -58,7 +58,7 @@ public class EmpERBsServlet extends HttpServlet {
 		erbsString = "{\"erbemployee\": " + erbsString + "}";
 		pw.write(erbsString);
 		} else {
-			System.out.println("nope");
+			System.out.println("n/a");
 		}
 	}
 
